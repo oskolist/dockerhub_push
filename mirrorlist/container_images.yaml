@@ -106,3 +106,10 @@
 - name: Nospeak
   source: ghcr.io/psic4t/nospeak:latest
   dest: docker.io/ssakm/nospeak:latest
+
+- name: Localsend Signaling server
+  source: ghcr.io/oskolist/localsend-signaling-server:latest
+  dest: docker.io/ssakm/localsend-signaling-server:latest
+- name: Localsend Web
+  source: ghcr.io/oskolist/localsend-web:latest
+  dest: docker.io/ssakm/localsend-web:latest
