@@ -3,6 +3,12 @@ name: "Mirror images from repo/mirrorlist/container_images.yaml to dockerhub"
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/mirror-containerimages-fromlistfile.yaml'
+      - 'mirrorlist/container_images.yaml'
   workflow_dispatch:
 
 jobs:
