@@ -1,0 +1,43 @@
+name: "Mirror images from repo/mirrorlist/container_images.yaml to dockerhub"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Login to Docker Hub
+        uses: docker/login-action@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Regctl
+        run: |
+          curl -L https://github.com/regclient/regclient/releases/latest/download/regctl-linux-amd64 >regctl
+          chmod 755 regctl
+      - name: Do mirror
+        run: |
+          yq e '.[] | [.name, .source, .dest] | join("|")' "./mirrorlist/container_images.yaml" | while IFS='|' read -r name source dest; do
+            echo "Processing item..."
+            echo "Name:   $name"
+            echo "Source: $source"
+            echo "Dest:   $dest"
+            echo "--------------------------"
+            ./regctl image copy "$source" "$dest"
+          done

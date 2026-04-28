@@ -1,0 +1,108 @@
+- name: 3XUI
+  source: ghcr.io/mhsanaei/3x-ui:latest
+  dest: docker.io/ssakm/3x-ui:latest
+  
+- name: Strfry
+  source: ghcr.io/hoytech/strfry:latest
+  dest: docker.io/ssakm/strfry:latest
+
+- name: Jumble
+  source: ghcr.io/aleerezaa/jumble:master
+  dest: docker.io/ssakm/jumble:master
+- name: Jumble Proxy Server
+  source: ghcr.io/danvergara/jumble-proxy-server:latest
+  dest: docker.io/ssakm/jumble-proxy-server:latest
+  
+- name: Envsubst
+  source: ghcr.io/yasn77/envsubst-image:1.4.2
+  dest: docker.io/ssakm/envsubst-image:1.4.2
+
+- name: Jq
+  source: ghcr.io/jqlang/jq:latest
+  dest: docker.io/ssakm/jq:latest
+
+- name: Pairdrop
+  source: ghcr.io/schlagmichdoch/pairdrop:latest
+  dest: docker.io/ssakm/pairdrop:latest
+
+- name: TeleMT
+  source: ghcr.io/telemt/telemt:latest
+  dest: docker.io/ssakm/telemt:latest
+
+- name: TeleMT Panel
+  source: ghcr.io/amirotin/telemt_panel:latest
+  dest: docker.io/ssakm/telemt_panel:latest
+
+- name: ergo
+  source: ghcr.io/ergochat/ergo:stable
+  dest: docker.io/ssakm/ergo:stable
+
+- name: rssnotes
+  source: ghcr.io/trinidz/rssnotes:latest
+  dest: docker.io/ssakm/rssnotes:latest
+
+- name: Zooid
+  source: ghcr.io/coracle-social/zooid:latest
+  dest: docker.io/ssakm/zooid:latest
+
+- name: Turn server
+  source: ghcr.io/mycrl/turn-server:latest
+  dest: docker.io/ssakm/turn-server:latest
+
+- name: Flotilla
+  source: ghcr.io/coracle-social/flotilla:latest
+  dest: docker.io/ssakm/flotilla:latest
+
+- name: Gitea Mirror
+  source: ghcr.io/raylabshq/gitea-mirror:latest
+  dest: docker.io/ssakm/gitea-mirror:latest
+
+- name: Hollama
+  source: ghcr.io/fmaclen/hollama:latest
+  dest: docker.io/ssakm/hollama:latest
+
+- name: VSCode Web Standalone
+  source: ghcr.io/oskolist/vscode-web-standalone:latest
+  dest: docker.io/ssakm/vscode-web-standalone:latest
+
+# - name: PicoClaw
+#   source: ghcr.io/sipeed/picoclaw:latest
+#   dest: docker.io/ssakm/picoclaw:latest
+# - name: PicoClaw Nightly
+#   source: ghcr.io/sipeed/picoclaw:nightly
+#   dest: docker.io/ssakm/picoclaw:nightly
+
+- name: SNI Spoofing go
+  source: ghcr.io/aleskxyz/sni-spoofing-go:latest
+  dest: docker.io/ssakm/sni-spoofing-go:latest
+
+- name: SNI Spoofing rust
+  source: ghcr.io/therealaleph/sni-spoofing-rust:latest
+  dest: docker.io/ssakm/sni-spoofing-rust:latest
+
+# Skipped kuba because "docker.io/ipfs/kubo" already exists
+- name: IPFS Helia HTTP Gateway
+  source: ghcr.io/ipfs/helia-http-gateway:latest
+  dest: docker.io/ssakm/helia-http-gateway:latest
+
+- name: IPFS Rainbow HTTP Gateway
+  source: ghcr.io/ipfs/rainbow:main-latest
+  dest: docker.io/ssakm/rainbow:main-latest
+- name: IPFS Rainbow HTTP Gateway
+  source: ghcr.io/ipfs/rainbow:latest
+  dest: docker.io/ssakm/rainbow:latest
+
+- name: IPFS Someguy Delegated Routing V1 server 
+  source: ghcr.io/ipfs/rainbow:main-latest
+  dest: docker.io/ssakm/rainbow:main-latest
+- name: IPFS Someguy Delegated Routing V1 server
+  source: ghcr.io/ipfs/rainbow:latest
+  dest: docker.io/ssakm/rainbow:latest
+
+- name: Fortivpn to SOCKS5
+  source: ghcr.io/minlaxz/fortivpn-to-socks5:main
+  dest: docker.io/ssakm/fortivpn-to-socks5:main
+
+- name: Nospeak
+  source: ghcr.io/psic4t/nospeak:latest
+  dest: docker.io/ssakm/nospeak:latest
