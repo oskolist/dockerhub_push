@@ -113,3 +113,18 @@
 - name: Localsend Web
   source: ghcr.io/oskolist/localsend-web:latest
   dest: docker.io/ssakm/localsend-web:latest
+
+#- name: Maarkdown Viewer
+#  source: ghcr.io/oskolist/maarkdown-viewer-image:latest
+#  dest: docker.io/ssakm/maarkdown-viewer-image:latest
+
+- name: SvelteMark
+  source: ghcr.io/oskolist/sveltemark:latest
+  dest: docker.io/ssakm/sveltemark:latest
+
+- name: GitNexus
+  source: ghcr.io/abhigyanpatwari/gitnexus-web:latest
+  dest: docker.io/ssakm/gitnexus-web:latest
+- name: GitNexus Web
+  source: ghcr.io/abhigyanpatwari/gitnexus:latest
+  dest: docker.io/ssakm/gitnexus:latest
