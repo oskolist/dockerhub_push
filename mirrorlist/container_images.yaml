@@ -102,6 +102,9 @@
 - name: Fortivpn to SOCKS5
   source: ghcr.io/minlaxz/fortivpn-to-socks5:main
   dest: docker.io/ssakm/fortivpn-to-socks5:main
+- name: Fortivpn to SOCKS5
+  source: ghcr.io/oskolist/fortivpn-socks5-container:latest
+  dest: docker.io/ssakm/fortivpn-socks5-container:latest
 
 - name: Nospeak
   source: ghcr.io/psic4t/nospeak:latest
