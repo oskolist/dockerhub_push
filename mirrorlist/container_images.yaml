@@ -1,6 +1,13 @@
 - name: 3XUI
   source: ghcr.io/mhsanaei/3x-ui:latest
   dest: docker.io/ssakm/3x-ui:latest
+
+- name: Shadowsocks-Rust Server
+  source: ghcr.io/shadowsocks/ssserver-rust:latest
+  dest: docker.io/ssakm/ssserver-rust:latest
+- name: Shadowsocks-Rust Client
+  source: ghcr.io/shadowsocks/sslocal-rust:latest
+  dest: docker.io/ssakm/sslocal-rust:latest
   
 - name: Strfry
   source: ghcr.io/hoytech/strfry:latest
