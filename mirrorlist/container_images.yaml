@@ -132,6 +132,6 @@
   source: ghcr.io/abhigyanpatwari/gitnexus:latest
   dest: docker.io/ssakm/gitnexus:latest
 
-- name: Zimit
-  source: ghcr.io/openzim/zimit:latest
-  dest: docker.io/ssakm/zimit:latest
+#- name: Zimit
+#  source: ghcr.io/openzim/zimit:latest
+#  dest: docker.io/ssakm/zimit:latest
