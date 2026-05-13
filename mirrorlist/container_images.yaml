@@ -8,6 +8,10 @@
 - name: Shadowsocks-Rust Client
   source: ghcr.io/shadowsocks/sslocal-rust:latest
   dest: docker.io/ssakm/sslocal-rust:latest
+
+- name: Hysteria Realm Server
+  source: ghcr.io/duoyang283-lab/hysteria-realm-server:latest
+  dest: docker.io/ssakm/hysteria-realm-server:latest
   
 - name: Strfry
   source: ghcr.io/hoytech/strfry:latest
