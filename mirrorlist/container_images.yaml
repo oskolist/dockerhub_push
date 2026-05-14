@@ -56,17 +56,17 @@
   source: ghcr.io/trinidz/rssnotes:latest
   dest: docker.io/ssakm/rssnotes:latest
 
-- name: Zooid
-  source: ghcr.io/coracle-social/zooid:latest
-  dest: docker.io/ssakm/zooid:latest
-
 - name: Turn server
   source: ghcr.io/mycrl/turn-server:latest
   dest: docker.io/ssakm/turn-server:latest
 
 - name: Flotilla
-  source: ghcr.io/coracle-social/flotilla:latest
+  source: gitea.coracle.social/coracle/flotilla:latest
   dest: docker.io/ssakm/flotilla:latest
+
+- name: Zooid
+  source: gitea.coracle.social/coracle/zooid:latest
+  dest: docker.io/ssakm/zooid:latest
 
 - name: Gitea Mirror
   source: ghcr.io/raylabshq/gitea-mirror:latest

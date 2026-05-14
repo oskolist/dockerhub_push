@@ -50,10 +50,14 @@ jobs:
       
       - name: Generate Dockerfile
         run: |
-          cat > Dockerfile << 'EOF'
+          cat > Dockerfile << EOF
           FROM scratch
-          
-          COPY downloads/ /downloads/
+          $(
+            for file in downloads/*; do
+              echo COPY $file /downloads/
+            done
+          )
+          #COPY downloads/ /downloads/
           COPY URLs.list /URLs.list
           WORKDIR /
           EOF
