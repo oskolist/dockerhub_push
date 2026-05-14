@@ -32,6 +32,10 @@
   source: ghcr.io/jqlang/jq:latest
   dest: docker.io/ssakm/jq:latest
 
+- name: Templ
+  source: ghcr.io/a-h/templ:latest
+  dest: docker.io/ssakm/templ:latest
+
 - name: Pairdrop
   source: ghcr.io/schlagmichdoch/pairdrop:latest
   dest: docker.io/ssakm/pairdrop:latest
