@@ -150,3 +150,7 @@
 #- name: Zimit
 #  source: ghcr.io/openzim/zimit:latest
 #  dest: docker.io/ssakm/zimit:latest
+
+- name: Nostr OIDC
+  source: ghcr.io/oskolist/nostr-oidc:latest
+  dest: docker.io/ssakm/nostr-oidc:latest
